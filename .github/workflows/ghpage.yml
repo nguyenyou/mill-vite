@@ -35,7 +35,7 @@ jobs:
       - name: Build ScalaJS
         run: ./mill www.fullLinkJS
       - name: Build Vite
-        run: vite build --base=/mill-vite/
+        run: yarn dlx rolldown-vite@latest build --base=/mill-vite/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
