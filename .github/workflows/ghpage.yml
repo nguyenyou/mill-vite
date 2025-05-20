@@ -35,7 +35,10 @@ jobs:
       - name: Build ScalaJS
         run: ./mill www.fullLinkJS
       - name: Build Vite
-        run: yarn dlx rolldown-vite@latest build --base=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)/
+        run: |
+          echo "Full GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
+          echo "Extracted repo name: $(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)"
+          yarn dlx rolldown-vite@latest build --base=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
