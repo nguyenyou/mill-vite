@@ -5,5 +5,5 @@ import com.raquo.laminar.api.L.*
 
 @main 
 def main(): Unit = {
-    render(dom.document.getElementById("app"), div("Welcome to Scala.js world!"))
+    render(dom.document.getElementById("app"), div("Mill + Vite + Scala.js"))
 }
