@@ -20,4 +20,13 @@ object www extends ScalaJSModule {
     mvn"com.raquo::laminar::${Versions.laminar}",
     mvn"org.scala-js::scalajs-dom::${Versions.sjsdom}"
   )
+
+  object test extends ScalaJSTests with TestModule.Utest {
+    def utestVersion = "0.8.5"
+    def moduleKind = ModuleKind.NoModule
+  }
+
+  def jsEnvConfig = Task {
+    JsEnvConfig.JsDom()
+  }
 }

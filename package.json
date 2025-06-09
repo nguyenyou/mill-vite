@@ -8,8 +8,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "packageManager": "yarn@4.9.1",
+  "packageManager": "yarn@4.9.2",
   "devDependencies": {
+    "jsdom": "^26.1.0",
     "vite": "npm:rolldown-vite@latest"
   }
 }
