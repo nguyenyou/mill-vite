@@ -7,3 +7,10 @@
 yarn install
 yarn dev
 ```
+
+
+## Tests
+
+```sh
+./mill www.test
+```
