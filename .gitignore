@@ -49,3 +49,4 @@ out
 tsconfig.build.tsbuildinfo
 .yarn
 .vercel
+.cursor

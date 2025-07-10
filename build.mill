@@ -1,3 +1,5 @@
+//| mill-version: 1.0.0
+
 package build
 
 import mill._, scalalib._, scalajslib._
