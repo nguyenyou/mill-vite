@@ -2,8 +2,7 @@
 
 package build
 
-import mill._, scalalib._, scalajslib._
-import mill.scalajslib.api._
+import mill.*, scalalib.*, scalajslib.*, scalajslib.api.*
 
 object Versions {
     val scala3 = "3.7.0"
