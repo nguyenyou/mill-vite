@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "fmt": "./mill mill.scalalib.scalafmt/"
   },
-  "packageManager": "yarn@4.9.2",
+  "packageManager": "yarn@4.9.4",
   "devDependencies": {
     "jsdom": "^26.1.0",
     "vite": "npm:rolldown-vite@latest"
