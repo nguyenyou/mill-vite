@@ -12,5 +12,9 @@
   "devDependencies": {
     "jsdom": "^27.0.0",
     "vite": "npm:rolldown-vite@latest"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
