@@ -1,9 +1,7 @@
 package www
 
-import org.scalajs.dom
-
 import japgolly.scalajs.react.*
-import japgolly.scalajs.react.vdom.html_<^.*
+import org.scalajs.dom
 
 def MainReactApp(): Unit = {
   val container = dom.document.getElementById("app")
