@@ -3,8 +3,8 @@ package www
 object Main {
   @main
   def run(): Unit = {
-    // render(dom.document.getElementById("app"), App()())
-    MainReactApp()
+    MainLaminarApp()
+    // MainReactApp()
   }
 
   def hello(): String = "Hello World"
