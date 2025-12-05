@@ -12,10 +12,10 @@
   },
   "devDependencies": {
     "jsdom": "^27.0.0",
-    "vite": "npm:rolldown-vite@latest"
+    "vite": "8.0.0-beta.0"
   },
   "dependencies": {
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
   }
 }
