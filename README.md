@@ -4,8 +4,8 @@
 
 ```sh
 ./mill www.fullLinkJS
-yarn install
-yarn dev
+bun install
+bun dev
 ```
 
 
