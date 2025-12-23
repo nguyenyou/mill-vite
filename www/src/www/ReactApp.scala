@@ -21,18 +21,18 @@ object ReactApp {
   }
 
   val useTitleCounter: HookResult[UseState[Int]] =
-    for {
+    for
       count <- useState(0)
       _ <- useEffect(Callback {
         document.title = s"You clicked ${count.value} times"
       })
-    } yield count
+    yield count
 
-  val component = ScalaFnComponent[Unit](props =>
-    for {
+  val component = ScalaFnComponent[Unit]: props =>
+    for
       count <- useTitleCounter // <--- usage
       fruit <- useState("banana")
-    } yield <.div(
+    yield <.div(
       <.p(s"You clicked ${count.value} times"),
       <.button(
         ^.onClick --> count.modState(_ + 1),
@@ -40,5 +40,4 @@ object ReactApp {
       ),
       <.p(s"Your favourite fruit is a ${fruit.value}!")
     )
-  )
 }
